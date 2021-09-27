@@ -1,0 +1,20 @@
+<header>
+  <h1 class="title">Reportcard Generator</h1>
+  <div class="nav-bar">
+    <ul>
+      <a routerLink="/" [ngClass]="{ 'active-link': hasRoute('/') }"
+        ><li>Students</li></a
+      >
+      <a
+        routerLink="/addStudent"
+        [ngClass]="{ 'active-link': hasRoute('/addStudent') }"
+        ><li>Add Student</li></a
+      >
+      <a
+        routerLink="/addMarks"
+        [ngClass]="{ 'active-link': hasRoute('/addMarks') }"
+        ><li>Add Mark Record</li></a
+      >
+    </ul>
+  </div>
+</header>

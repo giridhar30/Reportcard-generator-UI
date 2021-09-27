@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* --primary: #4480d5; */
+  --primary: #9ccd62;
+  --secondary: #3a3c42;
+  --tertiary: #f7f8e2;
+}
+
+* {
+  font-family: helvetica;
+}
+
+body {
+  margin: 0 10%;
+  background-color: var(--secondary);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.form {
+  padding: 20px 100px;
+}
+
+.form .form-group {
+  margin: 5% 0;
+}
+
+.form .form-group label {
+  color: var(--tertiary);
+}
+
+.form .form-group input {
+  display: block;
+  height: 34px;
+  width: 100%;
+  font-size: large;
+  color: #555;
+  font-weight: lighter;
+  border: none;
+  border-bottom: 1px solid var(--primary);
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.form .form-group input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--tertiary);
+}
+
+.form .form-group input[type="submit"] {
+  color: var(--secondary);
+  background-color: var(--primary);
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}

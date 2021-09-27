@@ -1,0 +1,35 @@
+<div class="form">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="regno">Register No</label><br />
+      <input type="text" name="regno" [(ngModel)]="regno" autocomplete="off" />
+    </div>
+    <div class="form-group">
+      <label for="name">Name</label><br />
+      <input type="text" name="name" [(ngModel)]="name" autocomplete="off" />
+    </div>
+    <div class="form-group">
+      <label for="dob">DOB</label><br />
+      <input type="date" name="dob" [(ngModel)]="dob" autocomplete="off" />
+    </div>
+    <div class="form-group">
+      <label for="fname">Father's Name</label><br />
+      <input type="text" name="fname" [(ngModel)]="fname" autocomplete="off" />
+    </div>
+    <div class="form-group">
+      <label for="mname">Mother's Name</label><br />
+      <input type="text" name="mname" [(ngModel)]="mname" autocomplete="off" />
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label><br />
+      <input type="text" name="phone" [(ngModel)]="phone" autocomplete="off" />
+    </div>
+    <div class="form-group">
+      <label for="mail">Mail</label><br />
+      <input type="text" name="mail" [(ngModel)]="mail" autocomplete="off" />
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Add" />
+    </div>
+  </form>
+</div>

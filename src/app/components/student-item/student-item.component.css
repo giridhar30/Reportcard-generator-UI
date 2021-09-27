@@ -1,0 +1,24 @@
+.student {
+  padding: 3% 0;
+  border-bottom: 1px solid var(--primary);
+  color: var(--tertiary);
+}
+
+.student .name {
+  font-size: 30px;
+  margin-bottom: 0.5%;
+}
+
+.student p {
+  font-size: 17px;
+  margin: 0.6% 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.center .btn-rp {
+  display: inline-block;
+  margin: 5px 10px;
+}

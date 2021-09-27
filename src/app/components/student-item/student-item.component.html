@@ -1,0 +1,28 @@
+<div class="student">
+  <h2 class="name">{{ student.name }}</h2>
+  <h2>{{ student.registerNo }}</h2>
+  <p>DOB: {{ student.dob }}</p>
+  <p>Father: {{ student.fatherName }}</p>
+  <p>Mother: {{ student.motherName }}</p>
+  <p>Contact: {{ student.phone }} / {{ student.mailId }}</p>
+  <div *ngFor="let m of student.marks">
+    <p>
+      Marks for term {{ m.term }} => Maths: {{ m.maths }} | Physics:
+      {{ m.physics }} | Chemistry: {{ m.chemistry }} | Biology:
+      {{ m.biology }} | History: {{ m.history }} | Total: {{ m.total }} |
+      Average: {{ m.avg }}
+    </p>
+  </div>
+  <div class="center">
+    <app-action-btn
+      text="Generate Reportcard"
+      class="btn-rp"
+      (rcEvent)="downloadRC()"
+    ></app-action-btn>
+    <app-action-btn
+      text="Mail Reportcard"
+      (rcEvent)="sendMail()"
+      class="btn-rp"
+    ></app-action-btn>
+  </div>
+</div>
